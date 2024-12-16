@@ -3,6 +3,10 @@ body,html{
     padding: 0;
 }
 
+.page{
+    min-height: 100%;
+}
+
 .logo{
     height: 6vh;
     width: 5vh;
@@ -26,4 +30,72 @@ body,html{
 
 .addBox{
     display: none;
+}
+
+.productListBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardDesign{
+    width: 20vh;
+    height: auto;
+    min-height: 30vh;
+    border-radius: 10px;
+    border: 5px solid #769ae1;
+    margin: 10px;
+    padding: 5px;
+}
+.paragraphDesign{
+    max-width: 14vh;
+}
+
+.signupText{
+    color: #769ae1;
+}
+.inputUsernameSignUp,.inputPasswordSignUp,.inputUsernameLogIn,.inputPasswordLogIn,.inputDescription,.inputProductName{
+    border:1px #769ae1 solid;
+    border-radius: 10px;
+}
+.signUpButton,.loginButton,.clearList,.addProduct,.addProductFinished,.statusButton{
+    border: none;
+    background-color: #769ae1;
+}
+.alreadyAccount{
+    border: none;
+    background-color: #769ae1;
+}
+.signUpBox,.logInBox{
+    margin-top: 15vh;
+}
+.refreshDiv{
+    background-color: #769ae1;
+}
+.refreshList{
+    border: none;
+}
+
+.nameDesign{
+    color: #769ae1;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+}
+.descriptionDesign{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width:100%;
+    margin-bottom: 3vh;
+}
+.statusButton{
+    margin-bottom: 3vh;
+}
+.deleteButtonProduct{
+    border: none;
+    margin-bottom: 1vh;
 }

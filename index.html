@@ -9,56 +9,62 @@
 </head>
 <body>
 <div class=" page d-flex flex-column justify-content-center align-items-center">
-    <nav class="navbar navbar-expand-lg navbarDesign w-100 mb-4">
+    <nav class="navbar navbar-expand-lg navbarDesign w-100 mb-2">
         <div class="container-fluid d-flex justify-content-center align-items-center">
-            <a class="navbar-brand " href="#"><img src="images/logoMyList.png" class="img-fluid me-2 logo" >My list</a>
+            <a class="navbar-brand text-white fs-2 fw-bolder" href="#"><img src="images/logoMyList.png" class="img-fluid me-2 logo" >My list</a>
         </div>
     </nav>
     <div class="signUpBox  flex-column justify-content-center align-items-center">
-        <p>Sign Up</p>
+        <p class="signupText fs-3 fw-bold">Sign Up</p>
         <div class="d-flex flex-column justify-content-center ">
-            <label for="username" class="form-label">Username :</label>
-            <input type="text" class="inputUsernameSignUp" placeholder="Username" name="username">
+            <label for="username" class="form-label signupText fs-4 ">Username :</label>
+            <input type="text" class="inputUsernameSignUp p-1" placeholder="Username" name="username">
         </div>
-        <div class="d-flex flex-column justify-content-center ">
-            <label for="password" class="form-label">Password :</label>
-            <input type="text" class="inputPasswordSignUp" placeholder="Password" name="password">
+        <div class="d-flex flex-column justify-content-center mt-3">
+            <label for="password" class="form-label form-label signupText fs-4 ">Password :</label>
+            <input type="text" class="inputPasswordSignUp p-1" placeholder="Password" name="password">
         </div>
-        <button class="signUpButton">Sign up</button>
-        <p class="">Already have an account? <button class="alreadyAccount" type="button">Login</button></p>
+        <button class="signUpButton mt-4 rounded w-75 p-1 text-white fw-bold mb-4">Sign up</button>
+        <p class="">Already have an account? <button class="alreadyAccount rounded ms-2 text-white fw-bold" type="button">Login</button></p>
     </div>
     <div class="logInBox  flex-column justify-content-center align-items-center">
-        <p>Login</p>
+        <p class="signupText fs-3 fw-bold">Login</p>
         <div class="d-flex flex-column justify-content-center ">
-            <label for="usernameLogin" class="form-label">Username :</label>
-            <input type="text" class="inputUsernameLogIn" placeholder="Username" name="usernameLogin">
+            <label for="usernameLogin" class="form-label signupText fs-4 ">Username :</label>
+            <input type="text" class="inputUsernameLogIn p-1" placeholder="Username" name="usernameLogin">
         </div>
         <div class="d-flex flex-column justify-content-center ">
-            <label for="passwordLogIn" class="form-label">Password :</label>
-            <input type="text" class="inputPasswordLogIn" placeholder="Password" name="passwordLogIn">
+            <label for="passwordLogIn" class="form-label signupText fs-4 ">Password :</label>
+            <input type="text" class="inputPasswordLogIn p-1" placeholder="Password" name="passwordLogIn">
         </div>
-        <button class="loginButton">Login</button>
+        <button class="loginButton mt-4 rounded w-75 p-1 text-white fw-bold mb-4">Login</button>
     </div>
     <div class="listPage flex-column w-100">
         <div class="parameter d-flex justify-content-between align-items-center w-100 p-3">
-            <span>Here is your list </span>
+            <span class="fs-5">Here is your list </span>
             <div class="d-flex justify-content-center align-items-center">
-                <button class="addProduct" type="button">Add product</button>
-                <button class="clearList" type="button">Clear list</button>
+                <button class="addProduct rounded text-white fw-bold me-2 p-1" type="button">Add product</button>
+                <button class="clearList rounded text-white fw-bold p-1" type="button">Clear list</button>
             </div>
         </div>
-        <div class="addBox">
-            <div>
-                <label for="productName" class="form-label">Product name :</label>
-                <input type="text" class="inputProductName" placeholder="Product name" name="productName">
-            </div>
-            <div>
-                <label for="productDescription" class="form-label">Product name :</label>
-                <input type="text" class="inputDescription" placeholder="Description" name="productDescription">
-            </div>
-            <button type="button" class="addProductFinished">Add</button>
+        <div class="refreshDiv d-flex justify-content-between align-items-center w-100 p-3 mb-3">
+            <span class="text-white fw-bold">Problems updating your list?</span>
+            <button class="refreshList rounded bg-white p-1" type="button">Refresh list</button>
         </div>
-        <div class="productListBox">
+        <div class="addBox flex-column justify-content-center align-items-center mt-3 mb-4">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="w-100 d-flex justify-content-between align-items-center mb-2">
+                    <label for="productName" class="form-label me-2">Product name :</label>
+                    <input type="text" class="inputProductName rounded   p-1" placeholder="Product name" name="productName">
+                </div>
+                <div class="w-100 d-flex justify-content-between align-items-center mb-3">
+                    <label for="productDescription" class="form-label">Description :</label>
+                    <input type="text" class="inputDescription rounded  p-1" placeholder="Description" name="productDescription">
+                </div>
+                <button type="button" class="addProductFinished rounded text-white fw-bold p-1 w-75">Add</button>
+            </div>
+        </div>
+        <div class="productListBox justify-content-center align-items-center">
 
         </div>
     </div>
