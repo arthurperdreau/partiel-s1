@@ -35,7 +35,6 @@ async function logIn(usernameLogin,passwordLogin){
     return await fetch("https://partiel-s1-b1dev-2425.esdlyon.dev/api/login",loginInfo)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             return token=data.token
 
         })
@@ -108,7 +107,6 @@ async function displayProduct() {
         buttonStatusProduct.textContent = statusText;
 
         buttonStatusProduct.addEventListener("click", async () => {
-            console.log(element.status);
             await changeStatus(element.id);
             await displayProduct();
         });
@@ -202,11 +200,9 @@ alreadyAccount.addEventListener('click',()=>{
 loginButton.addEventListener('click',()=>{
     let usernameLogin=document.querySelector('.inputUsernameLogIn');
     let passwordLogin=document.querySelector('.inputPasswordLogIn');
-    console.log("ok ici")
     logIn(usernameLogin.value, passwordLogin.value).then((data) => {
         token = data
         if(!(token===null||token===undefined)){
-            console.log(token)
             displayList()
             displayProduct()
         }
