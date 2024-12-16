@@ -32,6 +32,7 @@ async function logIn(usernameLogin,passwordLogin){
             password: passwordLogin,
         })
     }
+
     return await fetch("https://partiel-s1-b1dev-2425.esdlyon.dev/api/login",loginInfo)
         .then(response => response.json())
         .then(data => {
